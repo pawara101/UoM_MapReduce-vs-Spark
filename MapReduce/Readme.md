@@ -24,3 +24,6 @@
 - Year wise security delay from 2003-2010
 
         spark.time(spark.sql("SELECT Year, SUM(SecurityDelay) as total_delay FROM DelayedFlights WHERE Year >= 2003 AND Year <= 2010 AND CarrierDelay IS NOT NULL GROUP BY Year ORDER BY Year").show())
+
+
+## Results are given in Results.pdf
